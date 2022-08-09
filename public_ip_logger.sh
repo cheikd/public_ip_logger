@@ -13,7 +13,7 @@ if [ -n "$lastip" ] #var not empty
     if [ "$ip" != "$lastip" ]
         then
         echo -e "*** NEW IP ADDRESS DETECTED! ***"
-        echo -e "*** $date - Public IP is --> $ip\n"
+        echo -e "*** $date - Public IP is --> $ip"
     else
         echo -e "$date - No new IP found: $ip"
     fi

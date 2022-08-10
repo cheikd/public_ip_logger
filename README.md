@@ -18,10 +18,10 @@ If you want to change the file name you are outputting to, you will need to chan
 
 Here is an example of a cron job, to run the task every hour.
 
-#To edit cron jobs
+#To edit cron jobs.
 crontab -e   
 
-#cronjob scheduled to run every hour at minute 0
+#cronjob scheduled to run every hour.
 0 * * * * ./public_ip_logger.sh >> LOG-IP.txt
 
 

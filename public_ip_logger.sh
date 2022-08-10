@@ -6,7 +6,7 @@ logfile="LOG-IP.txt" # Log File name. Change this value if you want to use anoth
 
 ip=$(curl -s https://api.ipify.org) #Retrieve Public IP info
 
-lastip=$(tail -n 1 $logfile | awk '{print $NF}') #This variable read the logfile and stores the last string of the last line.
+lastip=$(tail -n 1 $logfile | awk '{print $NF}') #This command read the logfile and stores the last string of the last line.
 
 if [ -n "$lastip" ] # if $lastip not empty
     then
